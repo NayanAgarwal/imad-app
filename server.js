@@ -20,11 +20,9 @@ app.get('/article-three',function (req,res){
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.jss'));
-});
+
 app.get('/ui/https://pbs.twimg.com/profile_images/668279339838935040/8sUE9d4C.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+  res.sendFile(path.join(__dirname, 'ui', 'https://pbs.twimg.com/profile_images/668279339838935040/8sUE9d4C.jpg'));
 });
 
 
