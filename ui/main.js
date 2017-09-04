@@ -3,10 +3,12 @@ var button=document.getElementById('counter');
 button.onclick=function(){
     //create a requst object
     var request=new XMLHttpRequest();
-    //captur the request and stores it in variable
-    if(request.readyState===XmlHttprequest.DONE){
+    //captur the request and stores it n variable
+   request.onreadystatechange= function(){
+   
+    if(request.readyStat === XMLHttprequest.DONE){
         //take some action
-        if(request.status==200){
+        if(request.status === 200){
             var counter=request.reaponseText;
             var span=document.getElementById('count');
             span.innerHTML=counter.toString();
